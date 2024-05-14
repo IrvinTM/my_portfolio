@@ -1,7 +1,13 @@
 :root, html, body {
-  @apply dark:bg-black dark:text-white text-black bg-white;
+  @apply dark:bg-slate-700 dark:text-white text-black bg-green-50;
 }
 ;
+.gradient-mask-top {
+  mask-image: linear-gradient(to top, rgb(182, 8, 8) 95%, transparent);
+  overflow: hidden;
+  border-radius: 30px;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
