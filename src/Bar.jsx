@@ -1,10 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import {
     ComputerDesktopIcon,
     MoonIcon,
     SunIcon,
     Bars3Icon,
   } from "@heroicons/react/24/outline";
+  import { Link as ScrollLink } from 'react-scroll'; 
 export function Bar() {
     const [toggleMenu, setToggleMenu] = useState(false);
     const [dark, setDark] = useState(false);
@@ -29,6 +30,18 @@ export function Bar() {
     // Cleanup function to remove listener on component unmount
     return () => document.removeEventListener('click', handleClickOutside);
   }, [toggleMenu]);
+
+  const projectsSectionRef = useRef(null);
+  const aboutmeSectionRef = useRef(null);
+  const experienceSectionRef = useRef(null);
+  const homeRef = useRef(null);
+
+  const handleScrollClick = () => {
+    if (projectsSectionRef.current) {
+      projectsSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="app dark:bg-slate-700 dark:text-white text-black bg-green-50">
       <nav>
@@ -48,12 +61,38 @@ export function Bar() {
               </div>
               {/* primary */}
               <div className="dark:bg-slate-700 dark:text-white hidden text-black bg-green-50 lg:flex gap-8 ">
-                <a href="#" className="whitespace-nowrap">
-                  Home
-                </a>
-                <a className="whitespace-nowrap" href="#">About me</a>
-              <a className="whitespace-nowrap" href="#">Experience</a>
-              <a className="whitespace-nowrap" href="#">Projects</a>
+              <ScrollLink
+                  to="home-section" // Replace with the ID of your Projects section
+                  smooth={true}
+                  offset={-50} // Optional offset to adjust scroll position (adjust as needed)
+                  onClick={() => handleScrollClick(homeRef)}
+                >
+                  <span onClick={() => setToggleMenu(!toggleMenu)} className=" cursor-pointer">Home</span>
+                </ScrollLink>
+            <ScrollLink
+                  to="experience-section" // Replace with the ID of your Projects section
+                  smooth={true}
+                  offset={-50} // Optional offset to adjust scroll position (adjust as needed)
+                  onClick={() => handleScrollClick(experienceSectionRef)}
+                >
+                  <span onClick={() => setToggleMenu(!toggleMenu)} className=" cursor-pointer">Experience</span>
+                </ScrollLink>
+              <ScrollLink
+                  to="aboutme-section" // Replace with the ID of your Projects section
+                  smooth={true}
+                  offset={-50} // Optional offset to adjust scroll position (adjust as needed)
+                  onClick={() => handleScrollClick(aboutmeSectionRef)}
+                >
+                  <span onClick={() => setToggleMenu(!toggleMenu)} className=" cursor-pointer">About Me</span>
+                </ScrollLink>
+              <ScrollLink
+                  to="projects-section" // Replace with the ID of your Projects section
+                  smooth={true}
+                  offset={-50} // Optional offset to adjust scroll position (adjust as needed)
+                  onClick={() => handleScrollClick(projectsSectionRef)}
+                >
+                  <span onClick={() => setToggleMenu(!toggleMenu)} className=" cursor-pointer">Projects</span>
+                </ScrollLink>
               {dark&&<button>
                 <MoonIcon className="h-6" onClick={darkModeHandler} />
                 </button>}
@@ -78,9 +117,38 @@ export function Bar() {
         >
           <div className="px-8 rounded-xl  bg-green-50 dark:bg-slate-700 mobile-navigation">
             <div className="dark:bg-slate-700 dark:text-white text-black mb-2 bg-green-50 flex flex-col gap-8 font-bold tracking-wider">
-              <a href="#" onClick={() => setToggleMenu(!toggleMenu)}>About me</a>
-              <a href="#" onClick={() => setToggleMenu(!toggleMenu)}>Experience</a>
-              <a href="#" onClick={() => setToggleMenu(!toggleMenu)}>Projects</a>
+            <ScrollLink
+                  to="home-section" // Replace with the ID of your Projects section
+                  smooth={true}
+                  offset={-50} // Optional offset to adjust scroll position (adjust as needed)
+                  onClick={() => handleScrollClick(homeRef)}
+                >
+                  <span onClick={() => setToggleMenu(!toggleMenu)} className=" cursor-pointer">Home</span>
+                </ScrollLink>
+            <ScrollLink
+                  to="experience-section" // Replace with the ID of your Projects section
+                  smooth={true}
+                  offset={-50} // Optional offset to adjust scroll position (adjust as needed)
+                  onClick={() => handleScrollClick(experienceSectionRef)}
+                >
+                  <span onClick={() => setToggleMenu(!toggleMenu)} className=" cursor-pointer">Experience</span>
+                </ScrollLink>
+              <ScrollLink
+                  to="aboutme-section" // Replace with the ID of your Projects section
+                  smooth={true}
+                  offset={-50} // Optional offset to adjust scroll position (adjust as needed)
+                  onClick={() => handleScrollClick(aboutmeSectionRef)}
+                >
+                  <span onClick={() => setToggleMenu(!toggleMenu)} className=" cursor-pointer">About Me</span>
+                </ScrollLink>
+              <ScrollLink
+                  to="projects-section" // Replace with the ID of your Projects section
+                  smooth={true}
+                  offset={-50} // Optional offset to adjust scroll position (adjust as needed)
+                  onClick={() => handleScrollClick(projectsSectionRef)}
+                >
+                  <span onClick={() => setToggleMenu(!toggleMenu)} className=" cursor-pointer">Projects</span>
+                </ScrollLink>
               {dark&&<button>
                 <MoonIcon className="h-6" onClick={darkModeHandler} />
                 </button>}
