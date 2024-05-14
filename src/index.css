@@ -1,0 +1,7 @@
+:root, html, body {
+  @apply dark:bg-black dark:text-white text-black bg-white;
+}
+;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
