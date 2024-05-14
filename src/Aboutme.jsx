@@ -14,9 +14,14 @@ export function Aboutme(){
     <div className="flex flex-col gap-2 p-6 text-center mt-12">
         <h3 className="text-balance text-xl font-bold text-black lg:text-2xl dark:text-white" aria-describedby="profileDescription">Irvin Torres</h3>
         <span className="mx-auto w-fit bg-green-500 px-2 py-1 text-xs text-slate-100 dark:bg-green-900 dark:text-slate-100 rounded-xl">FULL STACK DEV</span>
-        <p id="profileDescription" className="mt-4 text-pretty text-sm">
+        <p id="profileDescription" className="mt-4 ">
         Full-stack developer with a passion for user experience, collaboration, and building meaningful digital products.
         </p>
+        <p>
+              I'm a tech-loving software engineering student who's always up for a coding adventure.
+               I can pick up new skills very fast, and right now,
+                I'm diving deep into React and Tailwind CSS.
+            </p>
         {/* <!-- Social Links --> */}
         <div className="mt-4 flex items-center justify-center gap-6">
 
