@@ -33,7 +33,7 @@ export function Bar() {
 
   const projectsSectionRef = useRef(null);
   const aboutmeSectionRef = useRef(null);
-  const experienceSectionRef = useRef(null);
+  const skillsSectionRef = useRef(null);
   const homeRef = useRef(null);
 
   const handleScrollClick = () => {
@@ -70,12 +70,12 @@ export function Bar() {
                   <span onClick={() => setToggleMenu(!toggleMenu)} className=" cursor-pointer">Home</span>
                 </ScrollLink>
             <ScrollLink
-                  to="experience-section" // Replace with the ID of your Projects section
+                  to="skills-section" // Replace with the ID of your Projects section
                   smooth={true}
                   offset={-50} // Optional offset to adjust scroll position (adjust as needed)
-                  onClick={() => handleScrollClick(experienceSectionRef)}
+                  onClick={() => handleScrollClick(skillsSectionRef)}
                 >
-                  <span onClick={() => setToggleMenu(!toggleMenu)} className=" cursor-pointer">Experience</span>
+                  <span onClick={() => setToggleMenu(!toggleMenu)} className=" cursor-pointer">Skills</span>
                 </ScrollLink>
               <ScrollLink
                   to="aboutme-section" // Replace with the ID of your Projects section
@@ -126,10 +126,10 @@ export function Bar() {
                   <span onClick={() => setToggleMenu(!toggleMenu)} className=" cursor-pointer">Home</span>
                 </ScrollLink>
             <ScrollLink
-                  to="experience-section" // Replace with the ID of your Projects section
+                  to="skills-section" // Replace with the ID of your Projects section
                   smooth={true}
                   offset={-50} // Optional offset to adjust scroll position (adjust as needed)
-                  onClick={() => handleScrollClick(experienceSectionRef)}
+                  onClick={() => handleScrollClick(skillsSectionRef)}
                 >
                   <span onClick={() => setToggleMenu(!toggleMenu)} className=" cursor-pointer">Experience</span>
                 </ScrollLink>

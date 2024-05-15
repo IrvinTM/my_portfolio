@@ -2,28 +2,30 @@ import { Aboutme } from "./Aboutme.jsx"
 import { Bar } from "./Bar"
 import { Projects } from "./Projects.jsx"
 import { useRef } from "react"
-import { Tec } from "./Tec.jsx"
+import { Skills } from "./Skills.jsx"
 
 function App() {
   const projectsSectionRef = useRef(null);
   const aboutmeSectionRef = useRef(null);
-  const experienceSectionRef = useRef(null);
+  const skillsSectionRef = useRef(null);
   const homeRef = useRef(null);
   return (
     <div id="home-section" ref={homeRef} >
     <div>
       <Bar projectsSectionRef={projectsSectionRef}
       aboutmeSectionRef = {aboutmeSectionRef}
-      experienceSectionRef = {experienceSectionRef}
+      skillsSectionRef = {skillsSectionRef}
       homeRef = {homeRef}></Bar>
     </div>
     <div id="aboutme-section" ref={aboutmeSectionRef} className="flex justify-center items-center pb-80">
-    <Aboutme></Aboutme>
+    <Aboutme
+    projectsSectionRef={projectsSectionRef}></Aboutme>
     </div>
-    <div id="experience-section" ref={experienceSectionRef}>
-      <Tec></Tec>
+    <div className="flex justify-center items-center pb-80" id="skills-section" ref={skillsSectionRef}>
+      <Skills></Skills>
     </div>
-    <div ref={projectsSectionRef} id="projects-section" className="flex flex-row justify-center items-center pb-10">
+    <p className="text-4xl font-bold text-center pb-2">Projects</p>
+    <div ref={projectsSectionRef} id="projects-section" className="flex justify-center items-center pb-20">
   <div className="flex sm:flex-row md:flex-row lg:flex-row flex-col justify-center items-center">
   <Projects
     title={"API nodejs"}
