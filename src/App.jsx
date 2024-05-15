@@ -3,6 +3,7 @@ import { Bar } from "./Bar"
 import { Projects } from "./Projects.jsx"
 import { useRef } from "react"
 import { Skills } from "./Skills.jsx"
+import { Footer } from "./Footer.jsx"
 
 function App() {
   const projectsSectionRef = useRef(null);
@@ -10,7 +11,7 @@ function App() {
   const skillsSectionRef = useRef(null);
   const homeRef = useRef(null);
   return (
-    <div id="home-section" ref={homeRef} >
+    <div id="home-section" className=" overflow-x-hidden" ref={homeRef} >
     <div>
       <Bar projectsSectionRef={projectsSectionRef}
       aboutmeSectionRef = {aboutmeSectionRef}
@@ -52,6 +53,9 @@ function App() {
     imageUrl="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg"
     ></Projects>
   </div>
+</div>
+<div className="flex flex-row justify-center">
+  <Footer></Footer>
 </div>
 </div>
 
