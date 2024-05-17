@@ -41,20 +41,20 @@ export function Aboutme(){
         <div className="mt-4 flex items-center justify-center gap-6">
 
             {/* <!-- Email --> */}
-            <a href="mailto:youremailaddress@email.com" className="text-slate-700 hover:scale-125 transition-transform dark:text-slate-300 dark:hover:text-green-" aria-label="email">
+            <a href="mailto:irvint698@gmail.com" className="text-slate-700 hover:scale-125 transition-transform dark:text-slate-300 dark:hover:text-green-" aria-label="email">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" className="size-7 shrink-0">
                     <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
                     <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
                 </svg>
             </a>
 
-            {/* <!-- Instagram --> */}
+            {/* <!-- Github --> */}
             <a href="https://github.com/IrvinTM" target="_blank" className="text-slate-700 hover:scale-125 transition-transform dark:text-slate-300 dark:hover:text-green-" aria-label="instagram">
                 <FaGithub className="w-6 h-6"></FaGithub>
             </a>
 
             {/* <!-- X (Twitter) --> */}
-            <a href="https://www.x.com" target="_blank" className="text-slate-700 hover:scale-125 transition-transform dark:text-slate-300 dark:hover:text-green-" aria-label="x or twitter">
+            <a href="https://x.com/Irvin0564312347?t=B_z-sZiBNvc0vjxzwobtvw&s=09" target="_blank" className="text-slate-700 hover:scale-125 transition-transform dark:text-slate-300 dark:hover:text-green-" aria-label="x or twitter">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" className="size-5 shrink-0">
                     <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
                 </svg>
