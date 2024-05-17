@@ -58,6 +58,8 @@ function App() {
     title={"Portfolio website"}  
     description="Portfolio website using React + Vite and Tailwindcss"
     imageUrl="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+    githubUrl={"https://github.com/IrvinTM/my_portfolio"}
+    liveUrl={"#home-section"}
     ></Projects>
   </div>
 </div>
