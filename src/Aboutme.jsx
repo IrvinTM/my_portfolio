@@ -1,6 +1,7 @@
 import { FaGithub } from "react-icons/fa";
 import { useRef } from "react";
 import { Link as ScrollLink } from 'react-scroll'; 
+import profile  from "./assets/profile.png"
 export function Aboutme(){
     const projectsSectionRef = useRef(null);
     const handleScrollClick = () => {
@@ -14,7 +15,7 @@ export function Aboutme(){
     <div className="relative h-36"> 
         <div className="h-full w-full object-cover bg-gradient-to-r from-green-50  via-green-200 to-green-50 dark:from-slate-700 dark:via-green-900 dark:to-slate-700"  />
         <div className="relative z-10 mx-auto -mt-14 size-28 overflow-hidden rounded-full border-4 border-slate-100 dark:border-slate-800">
-            <img src="/src/assets/profile.png" className="h-full object-cover transition duration-700 ease-out group-hover:scale-105" alt="avatar" />
+            <img src={profile} className="h-full object-cover transition duration-700 ease-out group-hover:scale-105" alt="avatar" />
         </div>
     </div>
     {/* <!-- Body --> */}
