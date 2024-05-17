@@ -43,9 +43,8 @@ export function Bar() {
   };
 
   return (
-    <div className="app dark:bg-slate-700 dark:text-white text-black bg-green-50">
       <nav>
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-2 dark:bg-slate-700 dark:text-white text-black bg-green-50">
           <div className="flex mx-auto justify-between w-5/6 xl:w-fit 2xl:w-fit lg:w-fit ">
             {/* Primary menu and logo */}
             <div className="flex items-center gap-16 my-12">
@@ -111,12 +110,12 @@ export function Bar() {
           </div>
         {/* mobile navigation */}
         <div
-          className={`fixed z-40 overflow-hidden flex flex-col lg:hidden gap-12 origin-top duration-700 ${
+          className={`relative z-40 w-36 overflow-hidden flex flex-col lg:hidden gap-12 origin-top duration-200 ${
             !toggleMenu ? "h-0" : "h-full"
           }`}
         >
-          <div className="px-8 rounded-xl  bg-green-50 dark:bg-slate-700 mobile-navigation">
-            <div className="dark:bg-slate-700 dark:text-white text-black mb-2 bg-green-50 flex flex-col gap-8 font-bold tracking-wider">
+          <div className="px-8 rounded-xl  bg-green-50 dark:bg-slate-700">
+            <div className="dark:bg-slate-700  dark:text-white text-black mb-2 bg-green-50 flex flex-col gap-8 font-bold tracking-wider">
             <ScrollLink
                   to="home-section" // Replace with the ID of your Projects section
                   smooth={true}
@@ -131,7 +130,7 @@ export function Bar() {
                   offset={-50} // Optional offset to adjust scroll position (adjust as needed)
                   onClick={() => handleScrollClick(skillsSectionRef)}
                 >
-                  <span onClick={() => setToggleMenu(!toggleMenu)} className=" cursor-pointer">Experience</span>
+                  <span onClick={() => setToggleMenu(!toggleMenu)} className=" cursor-pointer">Skills</span>
                 </ScrollLink>
               <ScrollLink
                   to="aboutme-section" // Replace with the ID of your Projects section
@@ -159,6 +158,5 @@ export function Bar() {
           </div>
         </div>
       </nav>
-    </div>
   )
 }

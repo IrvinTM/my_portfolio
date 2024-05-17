@@ -4,6 +4,7 @@ import { Projects } from "./Projects.jsx"
 import { useRef } from "react"
 import { Skills } from "./Skills.jsx"
 import { Footer } from "./Footer.jsx"
+import Headroom from 'react-headroom';
 
 function App() {
   const projectsSectionRef = useRef(null);
@@ -12,12 +13,12 @@ function App() {
   const homeRef = useRef(null);
   return (
     <div id="home-section" className=" overflow-x-hidden" ref={homeRef} >
-    <div>
+    <Headroom>
       <Bar projectsSectionRef={projectsSectionRef}
       aboutmeSectionRef = {aboutmeSectionRef}
       skillsSectionRef = {skillsSectionRef}
       homeRef = {homeRef}></Bar>
-    </div>
+    </Headroom>
     <div id="aboutme-section" ref={aboutmeSectionRef} className="flex justify-center items-center pb-80">
     <Aboutme
     projectsSectionRef={projectsSectionRef}></Aboutme>
@@ -30,27 +31,33 @@ function App() {
   <div className="flex sm:flex-row md:flex-row lg:flex-row flex-col justify-center items-center">
   <Projects
     title={"API nodejs"}
-    description="Simple api with nodejs"
-    imageUrl="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg"
+    description="Simple api with express js using the MVC pattern"
+    imageUrl="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg"
+    githubUrl={"https://github.com/IrvinTM/usefulwebsites"}
+    liveUrl={"https://usefulwebsites-5rma.onrender.com/websites"}
     ></Projects>
     
     <Projects
-    title={"API nodejs"}
-    description="Simple api with nodejs"
-    imageUrl="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg"
+    title={"Try GPT4 free"}
+    description="Created with React and gpt4free library"
+    imageUrl="https://webcartel.ai/images/news-07.svg"
+    githubUrl={"https://github.com/IrvinTM/o_checker"}
+    liveUrl={"https://trygpt4.onrender.com/"}
     ></Projects>
   </div>
   <div className="flex sm:flex-row md:flex-row lg:flex-row flex-col justify-center items-center">
   <Projects
-    title={"API nodejs"}
-    description="Simple api with nodejs"
-    imageUrl="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg"
+    title={"GPT4 free backend"}
+    description="Simple api with one endpoint using gpt4free."
+    imageUrl="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+    githubUrl={"https://github.com/IrvinTM/worker_api"}
+    liveUrl={"https://worker-api-8932.onrender.com"}
     ></Projects>
     
     <Projects
-    title={"API nodejs"}
-    description="Simple api with nodejs"
-    imageUrl="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg"
+    title={"Portfolio website"}  
+    description="Portfolio website using React + Vite and Tailwindcss"
+    imageUrl="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
     ></Projects>
   </div>
 </div>

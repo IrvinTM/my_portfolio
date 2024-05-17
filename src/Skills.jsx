@@ -1,3 +1,4 @@
+
 export const Skills = () => {
     
   return (
@@ -10,7 +11,7 @@ export const Skills = () => {
           </div> 
           <div className='grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
               <div className='shadow-md hover:scale-110 duration-500 rounded-xl'>
-                  <p className='my-4'>HTML</p>
+                  <p className='my-4'>HTML</p>  
               </div>
               <div className='shadow-md hover:scale-110 duration-500 rounded-xl'>
                   <p className='my-4'>CSS</p>
@@ -28,22 +29,22 @@ export const Skills = () => {
                   <p className='my-4'>NODE JS</p>
               </div>
               <div className='shadow-md hover:scale-110 duration-500 rounded-xl'>
-                  <p className='my-4'>MONGO DB</p>
+                  <p className='my-4'>POSTGRESQL</p>
               </div>
               <div className='shadow-md hover:scale-110 duration-500 rounded-xl'>
-                  <p className='my-4'>AWS</p>
+                  <p className='my-4'>PYTHON</p>
               </div>
               <div className='shadow-md hover:scale-110 duration-500 rounded-xl'>
-                  <p className='my-4'>Django</p>
+                  <p className='my-4'>DOCKER</p>
               </div>
               <div className='shadow-md hover:scale-110 duration-500 rounded-xl'>
-                  <p className='my-4'>Sass</p>
+                  <p className='my-4'>JAVA</p>
               </div>
               <div className='shadow-md hover:scale-110 duration-500 rounded-xl'>
-                  <p className='my-4'>Mongodb</p>
+                  <p className='my-4'>EXPRESS JS</p>
               </div>
               <div className='shadow-md hover:scale-110 duration-500 rounded-xl'>
-                  <p className='my-4'>GraphQl</p>
+                  <p className='my-4'>TAILWIND CSS</p>
               </div>
           </div>
       </div>

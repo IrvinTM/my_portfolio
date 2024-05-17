@@ -1,6 +1,6 @@
 import { FaGithub } from "react-icons/fa";
 import { MdOpenInNew } from "react-icons/md";
-export function Projects({ title, description, imageUrl }) {
+export function Projects({ title, description, imageUrl, githubUrl, liveUrl}) {
   return (
     <div className="h-auto w-28 min-w-52 min-h-52 p-1 mb-2 dark:rounded-lg">
       <div className="border-t border-r border-l dark:border-green-900 flex justify-center rounded-t-lg bg-green-50 dark:bg-slate-700">
@@ -23,16 +23,22 @@ export function Projects({ title, description, imageUrl }) {
             {description} 
           </p>
           <div className="flex justify-center flex-row items-center">
+          <a href={githubUrl}
+          target="_blank">
           <button
             type="button"
             className="w-12 h-12 p-1 flex justify-center items-center hover:scale-125 transition-transform">
             <FaGithub className="w-8 h-8"></FaGithub>
           </button>
+          </a>
+          <a href={liveUrl}
+          target="_blank">
           <button
             type="button"
             className="flex justify-center items-center w-12 h-12 p-1 hover:scale-125 transition-transform ">
               <MdOpenInNew className="w-8 h-8"></MdOpenInNew>
           </button>
+          </a>
           </div>
         </div>
       </div>

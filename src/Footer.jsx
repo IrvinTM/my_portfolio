@@ -12,7 +12,7 @@ export function Footer(){
       }
     };
     return(
-          <div className="px-8 rounded-xl  bg-green-50 dark:bg-slate-700 mobile-navigation">
+          <div className="px-8 rounded-xl  bg-green-50 dark:bg-slate-700 mobile-navigation flex justify-center">
             <div className="dark:bg-slate-700 dark:text-white text-black mb-2 bg-green-50 flex flex-col gap-8 font-bold tracking-wider">
             <ScrollLink
                   to="home-section" // Replace with the ID of your Projects section
@@ -28,7 +28,7 @@ export function Footer(){
                   offset={-50} // Optional offset to adjust scroll position (adjust as needed)
                   onClick={() => handleScrollClick(skillsSectionRef)}
                 >
-                  <span className=" cursor-pointer">Experience</span>
+                  <span className=" cursor-pointer">Skills</span>
                 </ScrollLink>
               <ScrollLink
                   to="aboutme-section" // Replace with the ID of your Projects section
