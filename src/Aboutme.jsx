@@ -2,6 +2,7 @@ import { FaGithub } from "react-icons/fa";
 import { useRef } from "react";
 import { Link as ScrollLink } from 'react-scroll'; 
 import profile  from "./assets/profile.png"
+import resume from "./assets/resume.pdf"
 export function Aboutme(){
     const projectsSectionRef = useRef(null);
     const handleScrollClick = () => {
@@ -22,7 +23,7 @@ export function Aboutme(){
     <div className="flex flex-col gap-2 p-6 text-center mt-12">
         <h3 className="text-4xl font-bold text-center" aria-describedby="profileDescription">Irvin Torres</h3>
         <div className="flex flex-row justify-center">
-        <a href="/src/assets/resume.pdf" className="mx-2 w-32 whitespace-nowrap bg-green-500 px-2 py-1 text-xs text-slate-100 dark:bg-green-900 dark:text-slate-100 rounded-xl hover:scale-125 transition-transform"> DOWNLOAD CV</a>
+        <a href={resume} className="mx-2 w-32 whitespace-nowrap bg-green-500 px-2 py-1 text-xs text-slate-100 dark:bg-green-900 dark:text-slate-100 rounded-xl hover:scale-125 transition-transform"> DOWNLOAD CV</a>
         <ScrollLink
                   to="projects-section" // Replace with the ID of your Projects section
                   smooth={true}

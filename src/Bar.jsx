@@ -43,7 +43,7 @@ export function Bar() {
   };
 
   return (
-      <nav>
+      <nav className="">
         <div className="max-w-7xl mx-2 dark:bg-slate-700 dark:text-white text-black bg-green-50">
           <div className="flex mx-auto justify-between w-5/6 xl:w-fit 2xl:w-fit lg:w-fit ">
             {/* Primary menu and logo */}
