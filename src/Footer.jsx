@@ -15,36 +15,36 @@ export function Footer(){
           <div className="px-8 rounded-xl  bg-green-50 dark:bg-slate-700 mobile-navigation flex justify-center">
             <div className="dark:bg-slate-700 dark:text-white text-black mb-2 bg-green-50 flex flex-col gap-8 font-bold tracking-wider">
             <ScrollLink
-                  to="home-section" // Replace with the ID of your Projects section
+                  to="home-section"  
                   smooth={true}
-                  offset={-50} // Optional offset to adjust scroll position (adjust as needed)
+                  offset={-50}
                   onClick={() => handleScrollClick(homeRef)}
                 >
-                  <span className=" cursor-pointer">Home</span>
+                  <span className="hover:text-green-500 cursor-pointer">Home</span>
                 </ScrollLink>
             <ScrollLink
-                  to="skills-section" // Replace with the ID of your Projects section
+                  to="skills-section"  
                   smooth={true}
-                  offset={-50} // Optional offset to adjust scroll position (adjust as needed)
+                  offset={-50}
                   onClick={() => handleScrollClick(skillsSectionRef)}
                 >
-                  <span className=" cursor-pointer">Skills</span>
+                  <span className="hover:text-green-500 cursor-pointer">Skills</span>
                 </ScrollLink>
               <ScrollLink
-                  to="aboutme-section" // Replace with the ID of your Projects section
+                  to="aboutme-section"  
                   smooth={true}
-                  offset={-50} // Optional offset to adjust scroll position (adjust as needed)
+                  offset={-50}
                   onClick={() => handleScrollClick(aboutmeSectionRef)}
                 >
-                  <span className=" cursor-pointer">About Me</span>
+                  <span className="hover:text-green-500 cursor-pointer">About Me</span>
                 </ScrollLink>
               <ScrollLink
-                  to="projects-section" // Replace with the ID of your Projects section
+                  to="projects-section"  
                   smooth={true}
-                  offset={-50} // Optional offset to adjust scroll position (adjust as needed)
+                  offset={-50}
                   onClick={() => handleScrollClick(projectsSectionRef)}
                 >
-                  <span className=" cursor-pointer">Projects</span>
+                  <span className="hover:text-green-500 cursor-pointer">Projects</span>
                 </ScrollLink>
             </div>
           </div>

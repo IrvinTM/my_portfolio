@@ -34,7 +34,7 @@ export function Aboutme(){
                   <span >PROJECTS</span>
                 </ScrollLink>
         </div>
-        <p id="profileDescription" className="mt-4 text-lg max-w-80">
+        <p id="profileDescription" className="mt-4 text-xl max-w-xl">
         Full-stack developer with a passion for user experience, collaboration, and building meaningful digital products.I can pick up new skills very fast, and right now,
                 I'm diving deep into React and Tailwind CSS.
         </p>

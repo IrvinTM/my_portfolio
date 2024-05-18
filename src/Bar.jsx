@@ -43,7 +43,7 @@ export function Bar() {
   };
 
   return (
-      <nav className="">
+      <nav>
         <div className="max-w-7xl mx-2 dark:bg-slate-700 dark:text-white text-black bg-green-50">
           <div className="flex mx-auto justify-between w-5/6 xl:w-fit 2xl:w-fit lg:w-fit ">
             {/* Primary menu and logo */}
@@ -59,14 +59,14 @@ export function Bar() {
                 </a>
               </div>
               {/* primary */}
-              <div className="dark:bg-slate-700 dark:text-white hidden text-black bg-green-50 lg:flex gap-8 ">
+              <div className="text-2xl dark:bg-slate-700 dark:text-white hidden text-black bg-green-50 lg:flex gap-8 ">
               <ScrollLink
                   to="home-section" // Replace with the ID of your Projects section
                   smooth={true}
                   offset={-50} // Optional offset to adjust scroll position (adjust as needed)
                   onClick={() => handleScrollClick(homeRef)}
                 >
-                  <span onClick={() => setToggleMenu(!toggleMenu)} className=" cursor-pointer">Home</span>
+                  <span onClick={() => setToggleMenu(!toggleMenu)} className="cursor-pointer hover:text-green-500">Home</span>
                 </ScrollLink>
             <ScrollLink
                   to="skills-section" // Replace with the ID of your Projects section
@@ -74,7 +74,7 @@ export function Bar() {
                   offset={-50} // Optional offset to adjust scroll position (adjust as needed)
                   onClick={() => handleScrollClick(skillsSectionRef)}
                 >
-                  <span onClick={() => setToggleMenu(!toggleMenu)} className=" cursor-pointer">Skills</span>
+                  <span onClick={() => setToggleMenu(!toggleMenu)} className="cursor-pointer hover:text-green-500">Skills</span>
                 </ScrollLink>
               <ScrollLink
                   to="aboutme-section" // Replace with the ID of your Projects section
@@ -82,7 +82,7 @@ export function Bar() {
                   offset={-50} // Optional offset to adjust scroll position (adjust as needed)
                   onClick={() => handleScrollClick(aboutmeSectionRef)}
                 >
-                  <span onClick={() => setToggleMenu(!toggleMenu)} className=" cursor-pointer">About Me</span>
+                  <span onClick={() => setToggleMenu(!toggleMenu)} className="cursor-pointer hover:text-green-500">About Me</span>
                 </ScrollLink>
               <ScrollLink
                   to="projects-section" // Replace with the ID of your Projects section
@@ -90,13 +90,13 @@ export function Bar() {
                   offset={-50} // Optional offset to adjust scroll position (adjust as needed)
                   onClick={() => handleScrollClick(projectsSectionRef)}
                 >
-                  <span onClick={() => setToggleMenu(!toggleMenu)} className=" cursor-pointer">Projects</span>
+                  <span onClick={() => setToggleMenu(!toggleMenu)} className="cursor-pointer hover:text-green-500">Projects</span>
                 </ScrollLink>
               {dark&&<button>
-                <MoonIcon className="h-6" onClick={darkModeHandler} />
+                <MoonIcon className="h-6 hover:text-green-500" onClick={darkModeHandler} />
                 </button>}
                 {!dark&&<button>
-                <SunIcon className="h-6" onClick={darkModeHandler} />
+                <SunIcon className="h-6 hover:text-green-500" onClick={darkModeHandler} />
                 </button>}
               </div>
             </div>
@@ -122,7 +122,7 @@ export function Bar() {
                   offset={-50} // Optional offset to adjust scroll position (adjust as needed)
                   onClick={() => handleScrollClick(homeRef)}
                 >
-                  <span onClick={() => setToggleMenu(!toggleMenu)} className=" cursor-pointer">Home</span>
+                  <span onClick={() => setToggleMenu(!toggleMenu)} className="hover:text-green-500 cursor-pointer">Home</span>
                 </ScrollLink>
             <ScrollLink
                   to="skills-section" // Replace with the ID of your Projects section
@@ -130,7 +130,7 @@ export function Bar() {
                   offset={-50} // Optional offset to adjust scroll position (adjust as needed)
                   onClick={() => handleScrollClick(skillsSectionRef)}
                 >
-                  <span onClick={() => setToggleMenu(!toggleMenu)} className=" cursor-pointer">Skills</span>
+                  <span onClick={() => setToggleMenu(!toggleMenu)} className="hover:text-green-500 cursor-pointer">Skills</span>
                 </ScrollLink>
               <ScrollLink
                   to="aboutme-section" // Replace with the ID of your Projects section
@@ -138,7 +138,7 @@ export function Bar() {
                   offset={-50} // Optional offset to adjust scroll position (adjust as needed)
                   onClick={() => handleScrollClick(aboutmeSectionRef)}
                 >
-                  <span onClick={() => setToggleMenu(!toggleMenu)} className=" cursor-pointer">About Me</span>
+                  <span onClick={() => setToggleMenu(!toggleMenu)} className="hover:text-green-500 cursor-pointer">About Me</span>
                 </ScrollLink>
               <ScrollLink
                   to="projects-section" // Replace with the ID of your Projects section
@@ -146,13 +146,13 @@ export function Bar() {
                   offset={-50} // Optional offset to adjust scroll position (adjust as needed)
                   onClick={() => handleScrollClick(projectsSectionRef)}
                 >
-                  <span onClick={() => setToggleMenu(!toggleMenu)} className=" cursor-pointer">Projects</span>
+                  <span onClick={() => setToggleMenu(!toggleMenu)} className="hover:text-green-500 cursor-pointer">Projects</span>
                 </ScrollLink>
               {dark&&<button>
-                <MoonIcon className="h-6" onClick={darkModeHandler} />
+                <MoonIcon className="h-6 hover:text-green-500" onClick={darkModeHandler} />
                 </button>}
                 {!dark&&<button >
-                <SunIcon className="h-6" onClick={darkModeHandler} />
+                <SunIcon className="h-6 hover:text-green-500" onClick={darkModeHandler} />
                 </button>}
             </div>
           </div>

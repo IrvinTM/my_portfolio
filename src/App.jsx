@@ -14,20 +14,22 @@ function App() {
   return (
     <div id="home-section" className=" overflow-x-hidden" ref={homeRef} >
     <Headroom>
+      <div className="lg:flex justify-center content-center xl:scale-125">
       <Bar projectsSectionRef={projectsSectionRef}
       aboutmeSectionRef = {aboutmeSectionRef}
       skillsSectionRef = {skillsSectionRef}
       homeRef = {homeRef}></Bar>
+      </div>
     </Headroom>
-    <div id="aboutme-section" ref={aboutmeSectionRef} className="flex justify-center items-center pb-80">
-    <Aboutme
+    <div id="aboutme-section" ref={aboutmeSectionRef} className="flex justify-center items-center pb-80 xl:scale-110">
+    <Aboutme className="scale-125"
     projectsSectionRef={projectsSectionRef}></Aboutme>
     </div>
-    <div className="flex justify-center items-center pb-80" id="skills-section" ref={skillsSectionRef}>
+    <div className="flex justify-center items-center pb-80 xl:scale-110" id="skills-section" ref={skillsSectionRef}>
       <Skills></Skills>
     </div>
-    <p className="text-4xl font-bold text-center pb-2">Projects</p>
-    <div ref={projectsSectionRef} id="projects-section" className="flex justify-center items-center pb-20">
+    <p className="text-4xl font-bold text-center pb-2 xl:scale-110 xl:pb-4">Projects</p>
+    <div ref={projectsSectionRef} id="projects-section" className="flex justify-center items-center pb-20 xl:scale-110">
   <div className="flex sm:flex-row md:flex-row lg:flex-row flex-col justify-center items-center">
   <Projects
     title={"API nodejs"}
@@ -63,7 +65,7 @@ function App() {
     ></Projects>
   </div>
 </div>
-<div className="flex flex-row justify-center">
+<div className="flex flex-row justify-center xl:scale-110">
   <Footer></Footer>
 </div>
 </div>
