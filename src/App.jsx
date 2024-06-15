@@ -29,7 +29,7 @@ function App() {
       <Skills></Skills>
     </div>
     <p className="text-4xl font-bold text-center pb-2 xl:scale-110 xl:pb-4">Projects</p>
-    <div ref={projectsSectionRef} id="projects-section" className="flex justify-center items-center pb-20 xl:scale-110">
+    <div ref={projectsSectionRef} id="projects-section" className="flex justify-center items-center m-20 pb-20 xl:scale-110">
   <div className="flex sm:flex-row md:flex-row lg:flex-row flex-col justify-center items-center">
   <Projects
     title={"API nodejs"}
@@ -65,6 +65,7 @@ function App() {
     ></Projects>
   </div>
 </div>
+
 <div className="flex flex-row justify-center xl:scale-110">
   <Footer></Footer>
 </div>

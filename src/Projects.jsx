@@ -2,7 +2,7 @@ import { FaGithub } from "react-icons/fa";
 import { MdOpenInNew } from "react-icons/md";
 export function Projects({ title, description, imageUrl, githubUrl, liveUrl}) {
   return (
-    <div className="h-auto w-28 min-w-52 min-h-52 p-1 mb-2 dark:rounded-lg">
+    <div className="h-20 w-28 min-w-52 min-h-52 p-1 mb-2 dark:rounded-lg">
       <div className="border-t border-r border-l dark:border-green-900 flex justify-center rounded-t-lg bg-green-50 dark:bg-slate-700">
       <a href="#!">
           <img
@@ -13,8 +13,8 @@ export function Projects({ title, description, imageUrl, githubUrl, liveUrl}) {
         </a>
       </div>
       <div
-        className=" border-b border-r border-l dark:border-green-900 rounded-b-lg shadow-sm bg-green-50 dark:bg-slate-700">
-        <div className="p-2">
+        className=" h-40 border-b border-r border-l dark:border-green-900 rounded-b-lg shadow-sm bg-green-50 dark:bg-slate-700">
+        <div className="h-20 text-sm text-center">
           <h5
             className=" text-center text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
             {title}  
@@ -22,7 +22,7 @@ export function Projects({ title, description, imageUrl, githubUrl, liveUrl}) {
           <p className=" text-center text-neutral-600 dark:text-neutral-200">
             {description} 
           </p>
-          <div className="flex justify-center flex-row items-center">
+          <div className="flex justify-center flex-row items-center h-20">
           <a href={githubUrl}
           target="_blank">
           <button
