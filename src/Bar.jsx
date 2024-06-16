@@ -55,11 +55,11 @@ export function Bar() {
                   className="flex gap-1 font-bold text-gray-900 dark:text-slate-300 items-center "
                 >
                   <ComputerDesktopIcon className="h-6 w-6 text-primary" />
-                  <span className="whitespace-nowrap">Irvin Torres</span>
+                  <span className="whitespace-nowrap">IrvinTorres</span>
                 </a>
               </div>
               {/* primary */}
-              <div className="text-2xl dark:bg-slate-700 dark:text-white hidden text-black bg-green-50 lg:flex gap-8 ">
+              <div className=" text-primary font-bold dark:bg-slate-700 dark:text-white hidden text-black bg-green-50 lg:flex gap-8 ">
               <ScrollLink
                   to="home-section" // Replace with the ID of your Projects section
                   smooth={true}

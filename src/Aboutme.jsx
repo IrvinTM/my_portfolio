@@ -22,17 +22,20 @@ export function Aboutme(){
     {/* <!-- Body --> */}
     <div className="flex flex-col gap-2 p-6 text-center mt-12">
         <h3 className="text-4xl font-bold text-center" aria-describedby="profileDescription">Irvin Torres</h3>
-        <div className="flex flex-row justify-center">
-        <a href={resume} className="mx-2 w-32 whitespace-nowrap bg-green-500 px-2 py-1 text-xs text-slate-100 dark:bg-green-900 dark:text-slate-100 rounded-xl hover:scale-125 transition-transform"> DOWNLOAD CV</a>
+        <div className="flex justify-center gap-4">
+        <button className="border w-26 h-8 border-slate-500 text-center hover:scale-110 transition-transform duration-75 rounded-xl bg-green-400 dark:bg-green-700 shadow-md text-black dark:text-slate-100">
+        <a className="m-2" href={resume}>Download CV</a>
+        </button>
+        <button className="border w-26 h-8 border-slate-500 shadow-md hover:scale-110 transition-transform duration-75 text-center rounded-xl">
         <ScrollLink
                   to="projects-section" // Replace with the ID of your Projects section
                   smooth={true}
                   offset={-50} // Optional offset to adjust scroll position (adjust as needed)
                   onClick={() => handleScrollClick(projectsSectionRef)}
-                  className="mx-2 w-32 bg-green-500 px-2 py-1 text-xs text-slate-100 dark:bg-green-900 dark:text-slate-100 rounded-xl hover:scale-125 transition-transform"
                 >
-                  <span >PROJECTS</span>
-                </ScrollLink>
+                  <span className="m-4 ml-6 mr-6">Projects</span>                </ScrollLink>
+        </button>
+        
         </div>
         <p id="profileDescription" className="mt-4 text-xl max-w-xl">
         Full-stack developer with a passion for user experience, collaboration, and building meaningful digital products.I can pick up new skills very fast, and right now,

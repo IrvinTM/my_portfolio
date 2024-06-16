@@ -29,9 +29,9 @@ function App() {
       <Skills></Skills>
     </div>
     <p className="text-4xl font-bold text-center pb-2 xl:scale-110 xl:pb-8">Projects</p>
-    <div ref={projectsSectionRef} id="projects-section" className="flex justify-center items-center pb-80 xl:scale-110">
-  <div className="flex sm:flex-row md:flex-row lg:flex-row flex-col justify-center items-center">
-  <Projects
+    <div ref={projectsSectionRef} id="projects-section" className="flex justify-center lg:flex-row flex-col pb-80">
+      <div className="flex flex-row justify-center">
+      <Projects
     title={"API nodejs"}
     description="Simple api with express js using the MVC pattern"
     imageUrl="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg"
@@ -46,9 +46,10 @@ function App() {
     githubUrl={"https://github.com/IrvinTM/o_checker"}
     liveUrl={"https://trygpt4.onrender.com/"}
     ></Projects>
-  </div>
-  <div className="flex sm:flex-row md:flex-row lg:flex-row flex-col justify-center items-center">
-  <Projects
+      </div>
+  
+    <div className="flex flex-row justify-center pt-20 lg:pt-0">
+    <Projects
     title={"GPT4 free backend"}
     description="Simple api with one endpoint using gpt4free."
     imageUrl="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
@@ -63,9 +64,20 @@ function App() {
     githubUrl={"https://github.com/IrvinTM/my_portfolio"}
     liveUrl={"#home-section"}
     ></Projects>
-  </div>
-</div>
+    </div>
 
+    <div className="flex flex-row justify-center pt-20 lg:pt-0 ">
+    <Projects
+    title={"GPT4 free backend"}
+    description="Simple api with one endpoint using gpt4free."
+    imageUrl="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+    githubUrl={"https://github.com/IrvinTM/worker_api"}
+    liveUrl={"https://worker-api-8932.onrender.com"}
+    ></Projects>
+    
+    </div>
+
+</div>
 <div className="flex flex-row justify-center xl:scale-110">
   <Footer></Footer>
 </div>
