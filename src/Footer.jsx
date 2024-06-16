@@ -13,9 +13,9 @@ export function Footer(){
     };
     return(
           <div className='w-90'>
-            <hr className="my-6 border-gray-300 sm:mx-auto dark:border-gray-600 lg:my-8 shadow-2xl" />
+            <hr className="my-2 border-gray-300 sm:mx-auto dark:border-gray-600 lg:my-8 shadow-2xl" />
           <div className="px-8 rounded-xl  bg-green-50 dark:bg-slate-700 mobile-navigation flex flex-row">
-            <div className="dark:bg-slate-700 dark:text-slate-400 text-slate-500 mb-2 bg-green-50 flex pb-5 gap-8 font-bold tracking-wider">
+            <div className="dark:bg-slate-700 dark:text-slate-400 text-slate-500 mb-2 bg-green-50 flex pb-2 gap-8 font-bold text-sm tracking-wider">
               
             <ScrollLink
                   to="home-section"  
