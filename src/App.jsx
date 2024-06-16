@@ -68,11 +68,11 @@ function App() {
 
     <div className="flex flex-row justify-center pt-20 lg:pt-0 ">
     <Projects
-    title={"GPT4 free backend"}
-    description="Simple api with one endpoint using gpt4free."
+    title={"Whastapp bot with ChatGPT4"}
+    description="Whatsapp bot with GPT4 and image generation capacity."
     imageUrl="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
-    githubUrl={"https://github.com/IrvinTM/worker_api"}
-    liveUrl={"https://worker-api-8932.onrender.com"}
+    githubUrl={"https://github.com/IrvinTM/whatsBot.git"}
+    liveUrl={"https://wa.me/50368247444"}
     ></Projects>
     
     </div>
