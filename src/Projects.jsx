@@ -2,7 +2,7 @@ import { FaGithub } from "react-icons/fa";
 import { MdOpenInNew } from "react-icons/md";
 export function Projects({ title, description, imageUrl, githubUrl, liveUrl}) {
   return (
-    <div className="h-20 w-28 min-w-52 min-h-52 p-1 mb-2 dark:rounded-lg">
+    <div className="w-52 h-52 p-1 mb-2 dark:rounded-lg">
       <div className="border-t border-r border-l dark:border-green-900 flex justify-center rounded-t-lg bg-green-50 dark:bg-slate-700">
       <a href="#!">
           <img
