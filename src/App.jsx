@@ -1,36 +1,25 @@
 import { Aboutme } from "./Aboutme.jsx"
 import { Bar } from "./Bar"
 import { Projects } from "./Projects.jsx"
-import { useRef } from "react"
 import { Skills } from "./Skills.jsx"
 import { Footer } from "./Footer.jsx"
 import Headroom from 'react-headroom';
 
 function App() {
-  const projectsSectionRef = useRef(null);
-  const aboutmeSectionRef = useRef(null);
-  const skillsSectionRef = useRef(null);
-  const homeRef = useRef(null);
   return (
-    <div id="home-section" className=" overflow-x-hidden" ref={homeRef} >
+    <div id="home-section" className=" overflow-x-hidden" >
     <Headroom>
       <div className="lg:flex justify-center content-center xl:scale-125">
-      <Bar projectsSectionRef={projectsSectionRef}
-      aboutmeSectionRef = {aboutmeSectionRef}
-      skillsSectionRef = {skillsSectionRef}
-      homeRef = {homeRef}></Bar>
+      <Bar></Bar>
       </div>
     </Headroom>
-    <div id="aboutme-section" ref={aboutmeSectionRef} className="flex justify-center items-center pb-80 xl:scale-110">
+    <div id="aboutme-section" className="flex justify-center items-center pb-80 xl:scale-110">
     <Aboutme className="scale-125"
-    projectsSectionRef={projectsSectionRef}></Aboutme>
-    </div>
-    <div className="flex justify-center items-center lg:pt-20 pb-80 pt-12 xl:scale-110" id="skills-section" ref={skillsSectionRef}>
-      <Skills></Skills>
+    ></Aboutme>
     </div>
     <p className="text-4xl font-bold text-center pb-2 xl:scale-110 xl:pb-8">Projects</p>
-    <div ref={projectsSectionRef} id="projects-section" className="flex justify-center lg:flex-row flex-col pb-80">
-      <div className="flex flex-row justify-center">
+    <div id="projects-section" className="flex justify-center lg:flex-row flex-col pb-80">
+      <div className="flex flex-row justify-center mt-10">
       <Projects
     title={"API nodejs"}
     description="Simple api with express js using the MVC pattern"
@@ -48,7 +37,7 @@ function App() {
     ></Projects>
       </div>
   
-    <div className="flex flex-row justify-center mt-20 lg:pt-0">
+    <div className="flex flex-row justify-center mt-10 lg:pt-0">
     <Projects
     title={"GPT4 free backend"}
     description="Simple api with one endpoint using gpt4free."
@@ -66,7 +55,7 @@ function App() {
     ></Projects>
     </div>
 
-    <div className="flex flex-row justify-center mt-20 lg:pt-0 ">
+    <div className="flex flex-row justify-center mt-[5rem] lg:mt-auto">
     <Projects
     title={"Whastapp bot with ChatGPT4"}
     description="Whatsapp bot with GPT4 and image generation capacity."
@@ -78,6 +67,9 @@ function App() {
     </div>
 
 </div>
+    <div className="flex justify-center items-center lg:pt-20 pb-80 pt-12 xl:scale-110" id="skills-section">
+      <Skills></Skills>
+    </div>
 <div className="flex flex-row justify-center xl:scale-110">
   <Footer></Footer>
 </div>

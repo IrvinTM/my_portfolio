@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect} from "react";
 import {
     ComputerDesktopIcon,
     MoonIcon,
@@ -22,7 +22,6 @@ export function Bar() {
     }
   }
 
-
   useEffect(() => {
     // Add event listener on component mount
     document.addEventListener('click', handleClickOutside);
@@ -30,17 +29,6 @@ export function Bar() {
     // Cleanup function to remove listener on component unmount
     return () => document.removeEventListener('click', handleClickOutside);
   }, [toggleMenu]);
-
-  const projectsSectionRef = useRef(null);
-  const aboutmeSectionRef = useRef(null);
-  const skillsSectionRef = useRef(null);
-  const homeRef = useRef(null);
-
-  const handleScrollClick = () => {
-    if (projectsSectionRef.current) {
-      projectsSectionRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   return (
       <nav>
@@ -64,7 +52,7 @@ export function Bar() {
                   to="home-section" // Replace with the ID of your Projects section
                   smooth={true}
                   offset={-50} // Optional offset to adjust scroll position (adjust as needed)
-                  onClick={() => handleScrollClick(homeRef)}
+
                 >
                   <span onClick={() => setToggleMenu(!toggleMenu)} className="cursor-pointer hover:text-green-500">Home</span>
                 </ScrollLink>
@@ -72,7 +60,7 @@ export function Bar() {
                   to="skills-section" // Replace with the ID of your Projects section
                   smooth={true}
                   offset={-50} // Optional offset to adjust scroll position (adjust as needed)
-                  onClick={() => handleScrollClick(skillsSectionRef)}
+        
                 >
                   <span onClick={() => setToggleMenu(!toggleMenu)} className="cursor-pointer hover:text-green-500">Skills</span>
                 </ScrollLink>
@@ -80,15 +68,15 @@ export function Bar() {
                   to="aboutme-section" // Replace with the ID of your Projects section
                   smooth={true}
                   offset={-50} // Optional offset to adjust scroll position (adjust as needed)
-                  onClick={() => handleScrollClick(aboutmeSectionRef)}
+                  
                 >
                   <span onClick={() => setToggleMenu(!toggleMenu)} className="cursor-pointer hover:text-green-500">About Me</span>
                 </ScrollLink>
               <ScrollLink
                   to="projects-section" // Replace with the ID of your Projects section
                   smooth={true}
-                  offset={-50} // Optional offset to adjust scroll position (adjust as needed)
-                  onClick={() => handleScrollClick(projectsSectionRef)}
+                  offset={-270} // Optional offset to adjust scroll position (adjust as needed)
+                  
                 >
                   <span onClick={() => setToggleMenu(!toggleMenu)} className="cursor-pointer hover:text-green-500">Projects</span>
                 </ScrollLink>
@@ -120,7 +108,7 @@ export function Bar() {
                   to="home-section" // Replace with the ID of your Projects section
                   smooth={true}
                   offset={-50} // Optional offset to adjust scroll position (adjust as needed)
-                  onClick={() => handleScrollClick(homeRef)}
+                  
                 >
                   <span onClick={() => setToggleMenu(!toggleMenu)} className="hover:text-green-500 cursor-pointer">Home</span>
                 </ScrollLink>
@@ -128,7 +116,7 @@ export function Bar() {
                   to="skills-section" // Replace with the ID of your Projects section
                   smooth={true}
                   offset={-50} // Optional offset to adjust scroll position (adjust as needed)
-                  onClick={() => handleScrollClick(skillsSectionRef)}
+    
                 >
                   <span onClick={() => setToggleMenu(!toggleMenu)} className="hover:text-green-500 cursor-pointer">Skills</span>
                 </ScrollLink>
@@ -136,7 +124,6 @@ export function Bar() {
                   to="aboutme-section" // Replace with the ID of your Projects section
                   smooth={true}
                   offset={-50} // Optional offset to adjust scroll position (adjust as needed)
-                  onClick={() => handleScrollClick(aboutmeSectionRef)}
                 >
                   <span onClick={() => setToggleMenu(!toggleMenu)} className="hover:text-green-500 cursor-pointer">About Me</span>
                 </ScrollLink>
@@ -144,7 +131,6 @@ export function Bar() {
                   to="projects-section" // Replace with the ID of your Projects section
                   smooth={true}
                   offset={-50} // Optional offset to adjust scroll position (adjust as needed)
-                  onClick={() => handleScrollClick(projectsSectionRef)}
                 >
                   <span onClick={() => setToggleMenu(!toggleMenu)} className="hover:text-green-500 cursor-pointer">Projects</span>
                 </ScrollLink>
