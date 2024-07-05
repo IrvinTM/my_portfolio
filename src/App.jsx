@@ -19,7 +19,7 @@ function App() {
     </div>
     <p className="text-4xl font-bold text-center pb-2 xl:scale-110 xl:pb-8">Projects</p>
     <div id="projects-section" className="flex justify-center lg:flex-row flex-col pb-80">
-      <div className="flex flex-row justify-center mt-10">
+      <div className="flex flex-row justify-center mt-10 mb-10">
       <Projects
     title={"API nodejs"}
     description="Simple api with express js using the MVC pattern"
