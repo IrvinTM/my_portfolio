@@ -37,7 +37,7 @@ function App() {
     ></Projects>
       </div>
   
-    <div className="flex flex-row justify-center mt-10 lg:pt-0">
+    <div className="flex flex-row justify-center mt-10 mb-10">
     <Projects
     title={"GPT4 free backend"}
     description="Simple api with one endpoint using gpt4free."
@@ -55,7 +55,7 @@ function App() {
     ></Projects>
     </div>
 
-    <div className="flex flex-row justify-center mt-[5rem] lg:mt-auto">
+    <div className="flex flex-row justify-center mt-10 mb-10">
     <Projects
     title={"Whastapp bot with ChatGPT4"}
     description="Whatsapp bot with GPT4."
