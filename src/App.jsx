@@ -47,18 +47,18 @@ function App() {
     ></Projects>
     
     <Projects
-    title={"Portfolio website"}  
-    description="Portfolio website using React + Vite and Tailwindcss"
+    title={"Free AI Image Generator"}  
+    description="Image generator webUI."
     imageUrl="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-    githubUrl={"https://github.com/IrvinTM/my_portfolio"}
-    liveUrl={"#home-section"}
+    githubUrl={"https://github.com/IrvinTM/imagineAI"}
+    liveUrl={"https://imagineai-3b03.onrender.com/"}
     ></Projects>
     </div>
 
     <div className="flex flex-row justify-center mt-[5rem] lg:mt-auto">
     <Projects
     title={"Whastapp bot with ChatGPT4"}
-    description="Whatsapp bot with GPT4 and image generation capacity."
+    description="Whatsapp bot with GPT4."
     imageUrl="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
     githubUrl={"https://github.com/IrvinTM/whatsBot.git"}
     liveUrl={"https://wa.me/50368247444"}
